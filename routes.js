@@ -21,7 +21,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 
   // Categories
   .state('mainList', {
-    url: '/main-list',
+    url: 'main-list',
     templateUrl: 'main-categories.template.html',
     controller: 'MainMenuAppController as mainList',
     resolve: {
@@ -33,7 +33,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 
 
    .state('itemDetail', {
-    url: '/item-detail/{itemId}',
+    url: 'item-detail/{itemId}',
     templateUrl: 'item-detail.template.html',
     controller: 'ItemDetailController as itemDetail',
     resolve: {
